@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        // function abes(a,b){
+        //     return a+b;
+        // }
+
+        // const abes=(x,y) => x+y;
+
+        // document.write(abes(2,5),"<br>");
+        // document.write(abes(1,5),"<br>");
+        // document.write(abes(5,5),"<br>");
+        const car=() => {
+            document.write("Car <br>");
+            document.write("Name: Virtus <br>");
+            document.write("Seat: 5 <br>");      
+        };
+
+        const aeroplane=() => {
+            document.write("Aeroplane <br>");
+            document.write("Name: Air India <br>");
+            document.write("Seat: 40 <br>");      
+        };
+
+        const helicopter=() => {
+            document.write("Helicopter <br>");
+            document.write("Name: Apache <br>");
+            document.write("Seat: 4 <br>");      
+        };
+        let x=prompt("Enter your vehicle");
+        if(x==1){
+            car();
+        }
+        else if(x==2){
+            aeroplane();
+        }
+        else{
+            helicopter();
+        }
+    </script>
+    
+</body>
+</html>
