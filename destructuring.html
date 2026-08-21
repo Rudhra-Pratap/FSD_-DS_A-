@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        const student={
+            name:"pakpak",
+            branch:"b-tech",
+            fee:10000
+        }
+        // document.write(student.name);
+        // document.write(student.branch);
+        // document.write(student.fee, "<br>");
+
+        let{name:naam, branch}=student;
+        document.write(naam, branch);
+    </script>
+</body>
+</html>

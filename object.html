@@ -8,13 +8,16 @@
 <body>
     <script>
         let student={
-            name:"Siddha",
-            class:"CSE-DS-A",
-            attendance:36
+            Name:"Siddha",
+            Class:"CSE-DS-A",
+            Attendance:36
         }
-        document.write(student['name']);
+        // document.write(student['name']);
         // let arr=[1,2,3,4,5]
         // document.write(arr['0']);
+        for(let key in student){
+            document.write(key,':',student[key],'<br>')
+        }
     </script>
 </body>
 </html>

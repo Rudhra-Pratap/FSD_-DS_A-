@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student1={
+            name:"Anvil",
+            course:"Btech",
+            fee:100000
+        }
+        const student2={
+            name:"Bob",
+            course:"Btech",
+            fee:120000
+        }
+        const student3={
+            name:"Charlie",
+            course:"MBA",
+            fee:150000
+        }
+        const student4={
+            name:"Pepper",
+            course:"MBA",
+            fee:130000
+        }
+        const arr=[student1,student2,student3,student4];
+        let x=prompt("Enter the course:");
+        const ans=arr.filter((i)=>i.course==x);
+        for(let i of ans){
+            document.write(i.name,' ');
+            document.write(i.fee,"<br>");
+        }
+    </script>
+</body>
+</html>
